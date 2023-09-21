@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-900 text-white font-sans">
+
+<!-- Conteneur principal -->
+<div class="container mx-auto mt-8 flex">
+
+    <!-- Barre latérale -->
+    <aside class="bg-gray-800 text-white w-1/5 p-4">
+        <h2 class="text-xl font-semibold mb-4">Menu</h2>
+        <ul>
+            <li class="mb-2"><a href="#" class="bg-white text-blue-500 hover:underline block px-4 py-2 rounded-lg">Tableau de bord</a></li>
+            <li class="mb-2"><a href="#" class="bg-white text-blue-500 hover:underline block px-4 py-2 rounded-lg">Demandes d'Offre</a></li>
+            <li class="mb-2"><a href="#" class="bg-white text-blue-500 hover:underline block px-4 py-2 rounded-lg">Messagerie</a></li>
+        </ul>
+        <button id="loginButton" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4">Se Connecter</button>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="w-4/5 p-4">
+
+        <!-- Bouton de messagerie -->
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md mb-4">Messagerie</button>
+
+        <!-- Liste des demandes d'offre de mission -->
+        <h2 class="text-2xl font-semibold mb-4">Demandes d'Offre de Mission</h2>
+
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Offre 1 -->
+            <li class="bg-white rounded-lg p-4 shadow-md">
+                <h3 class="text-xl font-semibold">Développeur Web Front-End</h3>
+                <p class="text-gray-600">Description de l'offre...</p>
+                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md">Postuler</button>
+            </li>
+
+            <!-- Offre 2 -->
+            <li class="bg-white rounded-lg p-4 shadow-md">
+                <h3 class="text-xl font-semibold">Développeur Web Back-End</h3>
+                <p class="text-gray-600">Description de l'offre...</p>
+                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md">Postuler</button>
+            </li>
+
+            <!-- Offre 3 -->
+            <li class="bg-white rounded-lg p-4 shadow-md">
+                <h3 class="text-xl font-semibold">Développeur Full Stack</h3>
+                <p class="text-gray-600">Description de l'offre...</p>
+                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md">Postuler</button>
+            </li>
+        </ul>
+    </main>
+</div>
+
+<script>
+    // Fonction pour gérer la connexion/déconnexion
+    document.getElementById('loginButton').addEventListener('click', function () {
+        // Ici, vous pouvez implémenter la logique de connexion (par exemple, afficher un formulaire de connexion).
+        alert('Fonction de connexion fictive.');
+    });
+</script>
+</body>
+</html>
